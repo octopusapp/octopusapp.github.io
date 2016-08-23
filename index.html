@@ -5,12 +5,12 @@
 	<script>
 		var l=document.location.search
 		if (l.indexOf('?test=')>=0)
-			document.location='http://www.octopusapp.es/web/test.html'
+			document.location='./web/test.html'
 		else {
 			var lang=navigator.language || navigator.userLanguage
 			if (lang!='es')
 				lang='en'
-			document.location='http://www.octopusapp.es/web/index.html?lang='+lang
+			document.location='./web/index.html?lang='+lang
 			}
 	</script>
 </head>
