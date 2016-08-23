@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!-- <meta HTTP-EQUIV="REFRESH" content="0; url=web/index.html"> -->
+	<script>
+		var l=document.location.search
+		if (l.indexOf('?test=')>=0)
+			document.location='http://www.octopusapp.es/web/test.html'
+		else {
+			var lang=navigator.language || navigator.userLanguage
+			if (lang!='es')
+				lang='en'
+			document.location='http://www.octopusapp.es/web/index.html?lang='+lang
+			}
+	</script>
+</head>
+<body>
+	
+</html>

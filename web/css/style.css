@@ -1,0 +1,354 @@
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By Andrea Galanti
+ * Thanks for MaterializeCSS.com
+ * Codyhouse.co
+ */
+ 
+/*
+fondo: #4D5762;
+turquesa: #4DB6AC;
+*/
+
+
+.hidden{display: none;}
+.padding0{padding-left:0!important; padding-right:0!important;}
+.padding5{padding-left:10px!important;}
+
+a{
+  color:#4DB6AC;
+}
+.navbar-fixed a.active{background-color:rgba(51, 51, 51, 0.2);}
+@font-face {
+    font-family: "Material-Design-Icons";
+    src: url("../font/material-design-icons/Material-Design-Icons.eot?#iefix") format("embedded-opentype"), url("../font/material-design-icons/Material-Design-Icons.woff2") format("woff2"), url("../font/material-design-icons/Material-Design-Icons.woff") format("woff"), url("../font/material-design-icons/Material-Design-Icons.ttf") format("truetype"), url("../font/material-design-icons/Material-Design-Icons.svg#Material-Design-Icons") format("svg");
+    font-weight: normal;
+    font-style: normal; 
+    }
+.mdx {
+    font-family: 'Material-Design-Icons';
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    // width: 1em;
+    // height: 1em;
+    // line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+
+    font-size:inherit;
+    
+
+    vertical-align: bottom;//vertical-align:-7px; 
+}
+*>i.fa, *>i[class^=mdi], *>i[class^=mdx] {
+  margin-right: 2px;
+}
+.default_color{background-color: #4D5762 !important;}
+.default_color_text{color: #ee6e73 !important;}
+
+
+.peques{margin-top:0rem;}
+.peques img{max-width: 120px; margin-top:1.5rem;}
+
+
+body.faq div#intro ul li {
+  margin-left:2rem !important;
+  list-style-type: disc !important;
+}
+
+body.index.test #index-banner{
+    min-height: none;
+    max-height: none;
+}
+
+#index-banner .shop{
+  padding-left:0;
+}
+.icon-block {
+  padding: 0 15px;
+}
+ 
+#intro{padding-top: 4rem;}
+ 
+#work{padding-top: 4rem; overflow: hidden;}
+ 
+#index-banner {
+    min-height: 632px;
+    max-height: 864px;
+    position: relative;
+    background-color: #4D5762;
+    overflow: hidden;
+}
+#index-banner .texto{
+    margin-top:2rem;
+    height: 40rem;
+  }
+#index-banner .texto .fijo{
+  font-size:4rem;
+  color:white;
+  }
+.shop img{
+  width: 11rem !important;
+  margin-right: 1rem
+  }
+
+footer{
+    margin-top: 0px!important;
+    padding-top: 40px;
+}
+footer.page-footer .footer-copyright {background-color: rgba(51, 51, 51, 0.2)}
+
+#nav_f{
+    box-shadow: none !important; 
+    -webkit-box-shadow:none !important;
+}
+ 
+.text_h {
+    padding: 15% 0;
+    font-size: 6.0em;
+    font-weight: 100;
+    color:#4DB6AC;
+}
+
+.faq h5{
+  margin-bottom:10px;
+  color:#4DB6AC;
+  line-height: 28px;
+  }
+ 
+.brand-logo{
+  position: absolute;
+  color: #fff;
+  display: inline-block;
+  font-size: 2.1rem;
+  font-style: normal;
+  font-weight: 100;
+  padding: 0;
+  letter-spacing: 7px;
+}
+ 
+.text_h2 {font-weight: 100;margin-bottom: 4%; line-height: 4.5rem;}
+ 
+.span_h2 {font-weight: 300;color: #4DB6AC;}
+ 
+.text_b{color: #4DB6AC;}
+ 
+.in{font-weight: 400 !important; font-style: normal !important;}
+ 
+.promo i {
+    color: #4DB6AC  ;
+    font-size: 7rem;
+    display: block;
+}
+.card-content a {color: #ee6e73;}
+ 
+.card-content a:hover {color: #ee6e73;}
+ 
+#work{background: rgb(247, 247, 247);}
+ 
+.text_pink{color:#EF9A9A;}
+ 
+nav ul a {
+  font-size: 1.2rem;
+  color: #FFF;
+  letter-spacing: 2px;
+  display: block;
+  font-weight: 300;
+  padding: 0px 15px;
+}
+ 
+/* -------------------------------- 
+ 
+xtype 
+ 
+-------------------------------- */
+.cd-headline.type .cd-words-wrapper {
+  vertical-align: top;
+  overflow: hidden;
+}
+.cd-headline.type .cd-words-wrapper::after {
+  /* vertical bar */
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 90%;
+  width: 1px;
+  background-color: #aebcb9;
+}
+.cd-headline.type .cd-words-wrapper.waiting::after {
+  -webkit-animation: cd-pulse 1s infinite;
+  -moz-animation: cd-pulse 1s infinite;
+  animation: cd-pulse 1s infinite;
+}
+.cd-headline.type .cd-words-wrapper.selected {
+  background-color: #FFF;
+}
+.cd-headline.type .cd-words-wrapper.selected::after {
+  visibility: hidden;
+}
+.cd-headline.type .cd-words-wrapper.selected b {
+  color: #4DB6AC;
+}
+.cd-headline.type b {
+  visibility: hidden;
+}
+.cd-headline.type b.is-visible {
+  visibility: visible;
+}
+.cd-headline.type i {
+  position: absolute;
+  visibility: hidden;
+}
+.cd-headline.type i.in {
+  position: relative;
+  visibility: visible;
+}
+ 
+@-webkit-keyframes cd-pulse {
+  0% {
+    -webkit-transform: translateY(-50%) scale(1);
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-50%) scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-50%) scale(0);
+    opacity: 0;
+  }
+}
+@-moz-keyframes cd-pulse {
+  0% {
+    -moz-transform: translateY(-50%) scale(1);
+    opacity: 1;
+  }
+  40% {
+    -moz-transform: translateY(-50%) scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    -moz-transform: translateY(-50%) scale(0);
+    opacity: 0;
+  }
+}
+@keyframes cd-pulse {
+  0% {
+    -webkit-transform: translateY(-50%) scale(1);
+    -moz-transform: translateY(-50%) scale(1);
+    -ms-transform: translateY(-50%) scale(1);
+    -o-transform: translateY(-50%) scale(1);
+    transform: translateY(-50%) scale(1);
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-50%) scale(0.9);
+    -moz-transform: translateY(-50%) scale(0.9);
+    -ms-transform: translateY(-50%) scale(0.9);
+    -o-transform: translateY(-50%) scale(0.9);
+    transform: translateY(-50%) scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-50%) scale(0);
+    -moz-transform: translateY(-50%) scale(0);
+    -ms-transform: translateY(-50%) scale(0);
+    -o-transform: translateY(-50%) scale(0);
+    transform: translateY(-50%) scale(0);
+    opacity: 0;
+  }
+}
+ 
+ 
+/* Preloader */
+#preloader {
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:#fff; /* change if the mask should have another color then white */
+  z-index:1200; /* makes sure it stays on top */
+}
+ 
+#status {
+  width:200px;
+  height:200px;
+  position:absolute;
+  left:50%; /* centers the loading animation horizontally one the screen */
+  top:50%; /* centers the loading animation vertically one the screen */
+  background-image:url(../img/status.gif); /* path to your loading animation */
+  background-repeat:no-repeat;
+  background-position:center;
+  margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+
+ 
+@media only screen and (max-width: 480px) {
+  #index-banner .texto{
+    height:26rem; /*para que los botones de descarga aparezcan en pantalla en iphone*/
+  }
+  #index-banner .row{
+    max-height:52rem;
+    overflow: hidden;
+  }
+
+
+
+  .promo i{
+    max-height: 9rem
+  }
+  body{
+    overflow-x:hidden;
+  }
+  #index-banner .texto{
+    padding-left:2px;
+  }
+  .text_h {
+    padding: 4% 0;
+    font-size: 4em;
+    margin-top:0;
+    font-weight: 100;
+  }
+  .text_h2 {
+    font-size:1.6rem;
+    line-height: 2.6rem;
+  }
+  #index-banner .shop{
+    padding-left: 0;
+  }
+  footer .descarga {
+    padding-left: 0!important;
+  }
+  footer .shop img{
+    padding-top:1.2rem;
+  }
+
+  .peques img {
+    max-width: 5rem;
+  }
+
+}
