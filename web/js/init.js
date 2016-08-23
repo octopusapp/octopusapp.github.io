@@ -26,6 +26,21 @@ function initHome(){
     var listaImg
     if (isIOS){
         listaImg=[
+            'ios-test-enfermeria.png',
+            'ios-app-ajustes.png',
+            'ios-app-menu-pausa.png',
+            'ios-app-menu.png',
+            'ios-medallero.png',
+            'ios-ranking.png',
+            
+            'ios-test-mapa.png',
+            'ios-test-pregunta.png',
+            'ios-tienda.png',
+            'ios-tutorial.png',
+            ]
+        }
+    else {
+        listaImg=[
             'android-test-pausa.png',
             'android-tienda.png',
             'android-test-teleco.png',
@@ -39,22 +54,7 @@ function initHome(){
             'android-tutorial.png',
             'android-test-mapa.png',
             'android-test-fin.png',
-            ]
-        }
-    else {
-        listaImg=[
-            'ios-test-enfermeria.png',
-            'ios-app-ajustes.png',
-            'ios-app-menu-pausa.png',
-            'ios-app-menu.png',
-            'ios-medallero.png',
-            'ios-ranking.png',
-            
-            'ios-test-mapa.png',
-            'ios-test-pregunta.png',
-            'ios-tienda.png',
-            'ios-tutorial.png',
-            ]
+            ]   
         }
 
     var pr=jQuery('.peques .row').empty()
