@@ -1,4 +1,7 @@
 var isIOS=/iPad|iPhone|iPod/.test(navigator.userAgent)
+var langEN=document.location.search=='?lang=en'
+var langES=!langEN
+
 function setIOSBody(){
     if (isIOS) jQuery('body').addClass('ios')
     }
@@ -17,8 +20,142 @@ function initTest(){
 
     sendTracking()
     }
+function getTranslationStrings(){
+    var dic= {
+        es:{
+            'lang-head-title':'Octopus: Test de oposiciones en tu móvil',
+            'lang-typewriter-header':'Oposiciones de ',
+            'lang-typewriter-values':[
+                'MIR',
+                'Auxiliar de Bibliotecas',
+                'Policía',
+                'EIR',
+                'Biología',
+                'Química',
+                'Farmacia',
+                'Psicología',
+                'Radiofísica',
+
+                'Informática',
+                'Telecomunicaciones',
+                'Auxiliar Administrativo',
+                'Agentes de Hacienda',
+                'Auxiliar Judicial',
+                ],
+            
+            'lang-intro-header':'Octopus es una nueva app para realizar',
+            'lang-intro-text':  'test de oposiciones',
+            'lang-intro-suffix':'desde tu móvil.',
+
+            'lang-box1-header':'Descarga gratuita',
+            'lang-box1-text':'Para teléfonos Android con versión 4 o superior y iPhone con versión 7 o superior.',
+
+            'lang-box2-header':'Centenares de test al alcance de tu mano',
+            'lang-box2-text':'Tenemos muchos de los cuestionarios que han salido en oposiciones, e iremos incorporando todos los que salgan. Están organizados para que encuentres rápidamente lo que buscas, y la mayoría (+95%) son gratuitos.',
+
+            'lang-box3-header':'Encuentra lo que te interesa',
+            'lang-box3-text':'Puedes explorar las características, buscar por año y profesión, y hasta descargar una muestra gratuita por si aún tienes dudas.',
+
+            'lang-box4-header':'Una interfaz específicamente diseñada para que te concentres en tu test',
+            'lang-box4-text':'Con la pregunta y las respuestas claramente delimitadas, la posibilidad de ver las imágenes adjuntas a pantalla completa, un rápido acceso al mapa del cuestionario o la posibilidad de marcar aquellas cuestiones que desees repasar.',
+
+            'lang-box5-header':'El aprendizaje es un juego',
+            'lang-box5-text':'Con el objetivo de estimularte en la consecución de tus objetivos hemos tomado prestadas algunas características de los videojuegos: medallero, ranking...',
+
+            'lang-box6-header':'Múltiples profesiones',
+            'lang-box6-text':'Hemos hecho un importante esfuerzo por incorporar un buen número de profesiones, e iremos incorporando otras nuevas de manera continua.',
+
+            'lang-section-header':'Diseño',
+            'lang-about-header':'Sobre Octopus',
+            'lang-about-text':'Octopus es una nueva plataforma para realizar test de oposiciones cómodamente desde tu teléfono Android o iPhone.',
+
+            'lang-author-header':'Ideado y creado por ',
+
+        },
+        en:{
+            'lang-head-title':'Octopus: exams on your phone',
+            'lang-typewriter-header':'Exams for ',
+            'lang-typewriter-values':[
+                'MIR',
+                'Auxiliar de Bibliotecas',
+                'Policía',
+                'EIR',
+                'Biología',
+                'Química',
+                'Farmacia',
+                'Psicología',
+                'Radiofísica',
+
+                'Informática',
+                'Telecomunicaciones',
+                'Auxiliar Administrativo',
+                'Agentes de Hacienda',
+                'Auxiliar Judicial',
+                ],
+            
+            'lang-intro-header':'Octopus is a new app to prepare your',
+            'lang-intro-text':  'test exams',
+            'lang-intro-suffix':'on your smartphone.',
+
+            'lang-box1-header':'Free download',
+            'lang-box1-text':'On Android 4+ phones & iPhone 7+.',
+
+            'lang-box2-header':'Hundreds of exams at your fingertips',
+            'lang-box2-text':'Many official exams questionnaires are available in our app, also new test will be incorporated to our database by the time they are accessible. All of them are strictly organized so that you can find whatever you look for in an easy, quick way. Furthermore, most of them (+95%) are free!',
+
+            'lang-box3-header':'Find what you need',
+            'lang-box3-text':'We ask you to explore all the features; searching by year or job… If you still have some doubts, just download a free sample',
+
+            'lang-box4-header':'A delightful interface designed for you to focus on your exam',
+            'lang-box4-text':'You will find every question clearly delimited with its own answer, marking those questions you want to review. You could watch conformed images in full screen mode and have a quick access to the questionnaire map.',
+
+            'lang-box5-header':'Learning is a game',
+            'lang-box5-text':'We have borrowed some features of games as medals, ranking ... aiming to fortify you to get your achievements.',
+
+            'lang-box6-header':'Multiple professions',
+            'lang-box6-text':'We have made a huge effort to incorporate a large number of professions. New others will be incorporated as soon as possible.',
+
+            'lang-section-header':'Interface',
+            'lang-about-header':'About Octopus',
+            'lang-about-text':'Octopus is a new exam training platform on your phone',
+
+            'lang-author-header':'Created by ',
+
+        }
+    }
+
+    if (langEN)
+        return dic.en
+    else
+        return dic.es
+}
+function translate(){
+    var d=getTranslationStrings()
+
+    var keys=Object.keys(d)
+    for (var i=0; i<keys.length; i++){
+        var key=keys[i]
+        var v=d[key]
+
+        if (key=='lang-typewriter-values'){
+            var ddd=$('.lang-typewriter-values').empty()
+
+            for (var j=0; j<v.length; j++){
+
+                ddd.append( 
+                    creaObjProp('b', {texto:v[j], className:j==0?'is-visible':''}) 
+                    )
+                }
+            }
+        else
+            $('.'+key).text(v)
+        }
+    }
 function initHome(){
     setIOSBody()
+
+    // if (langEN)
+        translate()
 
     var lnd=jQuery('#lnd')[0]
     lnd.src=isIOS?'img/landing-ios.png':'img/landing-android.png'
