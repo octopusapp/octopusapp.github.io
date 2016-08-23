@@ -4,14 +4,17 @@
 	<!-- <meta HTTP-EQUIV="REFRESH" content="0; url=web/index.html"> -->
 	<script>
 		var l=document.location.search
+		var nurl
 		if (l.indexOf('?test=')>=0)
-			document.location='http://www.octopusapp.es/web/test.html'
+			nurl='./web/test.html'
 		else {
 			var lang=navigator.language || navigator.userLanguage
 			if (lang!='es')
 				lang='en'
-			document.location='http://www.octopusapp.es/web/index.html?lang='+lang
+			nurl='./web/index.html?lang='+lang
 			}
+
+		setTimeout(function(){document.location=nurl}, 5000)
 	</script>
 </head>
 <body>
