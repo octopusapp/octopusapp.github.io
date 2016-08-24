@@ -73,24 +73,24 @@ function getTranslationStrings(){
 
         },
         en:{
-            'lang-head-title':'Octopus: exams on your phone',
+            'lang-head-title':'Octopus: practice exams on your phone',
             'lang-typewriter-header':'Exams for ',
             'lang-typewriter-values':[
-                'MIR',
-                'Auxiliar de Bibliotecas',
-                'Policía',
-                'EIR',
-                'Biología',
-                'Química',
-                'Farmacia',
-                'Psicología',
-                'Radiofísica',
+                // 'MIR',
+                // 'Auxiliar de Bibliotecas',
+                'Police',
+                'NCLEX - Nursering',
+                'Biologist',
+                'Chemist',
+                'Pharmacist',
+                'Psychologist',
+                // 'Radiofísica',
 
-                'Informática',
-                'Telecomunicaciones',
-                'Auxiliar Administrativo',
-                'Agentes de Hacienda',
-                'Auxiliar Judicial',
+                'Computer engineer',
+                'Telecom engineer',
+                // 'Auxiliar Administrativo',
+                'Tax agent',
+                // 'Auxiliar Judicial',
                 ],
             
             'lang-intro-header':'Octopus is a new app to prepare your',
@@ -103,23 +103,26 @@ function getTranslationStrings(){
             'lang-box2-header':'Hundreds of exams at your fingertips',
             'lang-box2-text':'Many official exams questionnaires are available in our app, also new test will be incorporated to our database by the time they are accessible. All of them are strictly organized so that you can find whatever you look for in an easy, quick way. Furthermore, most of them (+95%) are free!',
 
-            'lang-box3-header':'Find what you need',
-            'lang-box3-text':'We ask you to explore all the features; searching by year or job… If you still have some doubts, just download a free sample',
+            'lang-box3-header':'Search and find',
+            'lang-box3-text':'Explore by year, job… If you still have some doubts, just download a free sample',
 
             'lang-box4-header':'A delightful interface designed for you to focus on your exam',
             'lang-box4-text':'You will find every question clearly delimited with its own answer, marking those questions you want to review. You could watch conformed images in full screen mode and have a quick access to the questionnaire map.',
 
             'lang-box5-header':'Learning is a game',
-            'lang-box5-text':'We have borrowed some features of games as medals, ranking ... aiming to fortify you to get your achievements.',
+            'lang-box5-text':'We have borrowed some features from games (medals, ranking...) aiming to fortify you to get your achievements.',
 
             'lang-box6-header':'Multiple professions',
-            'lang-box6-text':'We have made a huge effort to incorporate a large number of professions. New others will be incorporated as soon as possible.',
+            'lang-box6-text':'A large number of professions are already in. New others will be incorporated as soon as possible.',
 
             'lang-section-header':'Interface',
             'lang-about-header':'About Octopus',
-            'lang-about-text':'Octopus is a new exam training platform on your phone',
+            'lang-about-text':'Octopus is a new exam training tool for your smartphone',
 
             'lang-author-header':'Created by ',
+
+            'lang-lnk-faq':'faq',
+            'lang-lnk-roadmap':'roadmap',
 
         }
     }
