@@ -131,6 +131,9 @@ function getTranslationStrings(){
         return dic.en
     else
         return dic.es
+    }
+function changelang(lang){
+    document.location.search='?lang='+lang
 }
 function translate(){
     var d=getTranslationStrings()

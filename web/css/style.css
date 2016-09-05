@@ -75,6 +75,28 @@ body.index.test #index-banner{
     min-height: none;
     max-height: none;
 }
+body.index #index-banner .container{
+
+    width: 100%;
+    padding-left: 20px;
+}
+body.index #index-banner .changelang div{
+  background-position: center; 
+  background-repeat: no-repeat;
+  width:3rem; height:3rem;
+  border:2px solid white;
+  border-radius: 50%;
+
+  float: right;
+  margin-right: 1rem;
+  }
+div.es{
+  background-image:url(../img/es.png);
+
+}
+div.en{
+  background-image:url(../img/en.png);
+}
 
 #index-banner .shop{
   padding-left:0;
