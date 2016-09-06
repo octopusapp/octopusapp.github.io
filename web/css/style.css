@@ -331,7 +331,7 @@ xtype
  
 @media only screen and (max-width: 480px) {
   #index-banner .texto{
-    height:26rem; /*para que los botones de descarga aparezcan en pantalla en iphone*/
+    height:23rem; /*para que los botones de descarga aparezcan en pantalla en iphone*/
   }
   #index-banner .row{
     max-height:52rem;
